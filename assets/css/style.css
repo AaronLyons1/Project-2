@@ -5,11 +5,21 @@ body{
     margin: 0;
 }
 
+header{
+    height: 50px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
 img{
     max-width: 200px;
     max-height: 250px;
     padding: 20px;
 
+}
+
+.game-borde{
+    width: 70%;
 }
 
 .rock{
