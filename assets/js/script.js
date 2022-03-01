@@ -1,7 +1,7 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-let button = document.getElementsByClassName("btn")
+let buttons = document.getElementsByClassName("btn")
 let pcScore = document.getElementsByClassName("pc-score")
 let playerImage = document.getElementById("ply-image")
 let pcImage = document.getElementById("pc-image")
@@ -65,5 +65,13 @@ function checkWinner(){
         alert(`${currentGame} = You Have Won! Yay`);
     } else {
         alert(`${currentGame} = Dam, the Computer was just better`);
+    }
+}
+
+function updateScore(){
+    if (alert === "`${currentGame} = Dam, the Computer was just better`"){
+        ++pcScore;
+    }else {
+        ++playerScore;
     }
 }
