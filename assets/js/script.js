@@ -6,9 +6,9 @@ let pcScore = document.getElementsByClassName("pc-score");
 let playerImage = document.getElementById("ply-image");
 let pcImage = document.getElementById("pc-image");
 let playerScore = document.getElementsByClassName("ply-score");
-let options = ["rock","paper","scissors"]
-const pcChoice = document.getAttribute("data-choice")
-const gamerChoice = document.getAttribute("data-choice")
+let options = ["rock","paper","scissors"];
+const pcChoice = document.getAttribute("data-choice");
+const gamerChoice = document.getAttribute("data-choice");
 
 /**
  * Eventlisteners here!
