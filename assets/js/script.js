@@ -12,13 +12,13 @@ const pcChoice = null;
 /**
  * Eventlisteners here!
  */
+
 for (let button of buttons) {
 	button.addEventListener("click", function() {
 		let gamerChoice = this.getAttribute("data-choice");
 		runGame(gamerChoice);
 	});
 }
-
 
 function runGame(gamerChoice) {
 
@@ -34,41 +34,39 @@ function checkWinner(pcChoice, gamerChoice) {
 	let currentGame = `${pcChoice} against ${gamerChoice}`;
 
 	//Check if the game is a tie
-	if (pcScore === playerScore) {
+	if (gamerChoice === pcChoice) {
 		alert(`${currentGame} is a Draw!`);
 		return;
 	}
 
 
+
 	//rock
-	if (gamerChoice === "rock") {
+	else if (gamerChoice === "rock") {
 		if (pcChoice === "scissors")
 			alert(`${currentGame} = You Have Won! Yay`);
 		else
 			alert(`${currentGame} = Dam, the Computer was just better`);
+	}
 
+
+	//paper
+	else if (gamerChoice === "paper") {
+		if (pcChoice === "rock")
+			alert(`${currentGame} = You Have Won! Yay`);
+		else
+			alert(`${currentGame} = Dam, the Computer was just better`);
+	}
+
+
+	//scissors
+	if (gamerChoice === "scissors") {
+		if (pcChoice === "paper")
+			alert(`${currentGame} = You Have Won! Yay`);
+		else
+			alert(`${currentGame} = Dam, the Computer was just better`);
 	}
 }
-
-//paper
-if (gamerChoice === "paper") {
-	if (pcChoice === "rock")
-		alert(`${currentGame} = You Have Won! Yay`);
-	else
-		alert(`${currentGame} = Dam, the Computer was just better`);
-
-}
-
-
-//scissors
-if (gamerChoice === "scissors") {
-	if (pcChoice === "paper")
-		alert(`${currentGame} = You Have Won! Yay`);
-	else
-		alert(`${currentGame} = Dam, the Computer was just better`);
-}
-
-
 
 function updateScore() {
 	if (alert === "`${currentGame} = Dam, the Computer was just better`") {
