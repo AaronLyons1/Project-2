@@ -102,4 +102,63 @@ button:hover {
     background-position: center;
 }
 
+.results{
+    width: 900px;
+    display: flex;
+}
+
+.results i {
+    width: 275px;
+    height: 275px;
+}
+
+.results > div{
+    flex: 1;
+}
+
+.results h1{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 22px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.result i{
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ref{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ref h1{
+    font-size: 40px;
+}
+
+.newRound{
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:rgb(58, 57, 59);
+}
+
+.newRound:hover{
+    background-color: beige;
+    transform: translate3d(0px, -2px, 0px);
+    transition: all 0.10s;
+}
+
+
+
 

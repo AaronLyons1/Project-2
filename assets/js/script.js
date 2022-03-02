@@ -65,6 +65,7 @@ const pickUserHand = (hands) => {
 	console.log(hands);
 	let hand = document.querySelector(".game-borde")
 	hand.style.display = "none"
+	
 }
 
 document.getElementsById("rock").style.display = "none";
