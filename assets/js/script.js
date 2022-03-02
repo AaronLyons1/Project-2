@@ -31,7 +31,7 @@ function runGame(gamerChoice) {
 }
 
 function checkWinner(pcChoice, gamerChoice) {
-	let currentGame = `${pcChoice} against ${gamerChoice}`;
+	let currentGame = `${gamerChoice} against ${pcChoice}`;
 
 	//Check if the game is a tie
 	if (gamerChoice === pcChoice) {
@@ -42,26 +42,22 @@ function checkWinner(pcChoice, gamerChoice) {
 
 
 	//rock
-	else if (gamerChoice === "rock") {
-		if (pcChoice === "scissors")
+	else if ( pcChoice === "rock") {
+		if (gamerChoice === "paper")
 			alert(`${currentGame} = You Have Won! Yay`);
 		else
 			alert(`${currentGame} = Dam, the Computer was just better`);
 	}
-
-
 	//paper
-	else if (gamerChoice === "paper") {
-		if (pcChoice === "rock")
+	else if (pcChoice === "paper") {
+		if (gamerChoice === "scissors")
 			alert(`${currentGame} = You Have Won! Yay`);
 		else
 			alert(`${currentGame} = Dam, the Computer was just better`);
 	}
-
-
 	//scissors
-	if (gamerChoice === "scissors") {
-		if (pcChoice === "paper")
+	if (pcChoice === "scissors") {
+		if (gamerChoice === "rock")
 			alert(`${currentGame} = You Have Won! Yay`);
 		else
 			alert(`${currentGame} = Dam, the Computer was just better`);
