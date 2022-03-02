@@ -27,20 +27,20 @@
                     <img src="assets/images/rock-paper-scissors.png" alt="rock paper scissors">
                 </div>
                 <div class="score">
-                    <p class="scores">Player Score <span id="ply-score">0</span></p>
+                    <p class="scores">Player Score <span id="ply-score" >0</span></p>
                     <p class="scores">Computers Score <span id="pc-score">0</span></p>
                 </div>
             </div>
 
             <div class="game-borde">
-                <div class="rock hands">
-                    <button class="rock btn" data-choice="rock"><i class="fab fa-solid fa-hand-back-fist big"></i></button>
+                <div class="rock hands" id="rock">
+                    <button class="rock btn" data-choice="rock"><i class="fab fa-solid fa-hand-back-fist big" onclick="pickUserHand('rock')"></i></button>
                 </div>
                 <div class="paper hands">
-                    <button class="paper btn" data-choice="paper"><i class="fab fa-solid fa-hand big"></i></button>
+                    <button class="paper btn" data-choice="paper"><i class="fab fa-solid fa-hand big" onclick="pickUserHand('paper')"></i></button>
                 </div>
                 <div class="scissors hands"></div>
-                <button class="scissors btn" data-choice="scissors"><i class="fab fa-solid fa-hand-scissors big"></i></button>
+                <button class="scissors btn" data-choice="scissors"><i class="fab fa-solid fa-hand-scissors big" onclick="pickUserHand('scissors')"></i></button>
             </div>
         </div>
 

@@ -30,41 +30,45 @@ function runGame(gamerChoice) {
 	updateScore(result);
 }
 
-function checkWinner(pcChoice, gamerChoice) {
-	let currentGame = `${gamerChoice} against ${pcChoice}`;
+// function checkWinner(pcChoice, gamerChoice) {
+// 	let currentGame = `${gamerChoice} against ${pcChoice}`;
 
-	//Check if the game is a tie
-	if (gamerChoice === pcChoice) {
-		alert(`${currentGame} is a Draw!`);
-		return;
-	}
-	//rock
-	else if ( pcChoice === "rock") {
-		if (gamerChoice === "paper")
-			alert(`${currentGame} = You Have Won! Yay`);
-		else
-			alert(`${currentGame} = Dam, the Computer was just better`);
-	}
-	//paper
-	else if (pcChoice === "paper") {
-		if (gamerChoice === "scissors")
-			alert(`${currentGame} = You Have Won! Yay`);
-		else
-			alert(`${currentGame} = Dam, the Computer was just better`);
-	}
-	//scissors
-	if (pcChoice === "scissors") {
-		if (gamerChoice === "rock")
-			alert(`${currentGame} = You Have Won! Yay`);
-		else
-			alert(`${currentGame} = Dam, the Computer was just better`);
-	}
+// 	//Check if the game is a tie
+// 	if (gamerChoice === pcChoice) {
+// 		alert(`${currentGame} is a Draw!`);
+// 		return;
+// 	}
+// 	//rock
+// 	else if ( pcChoice === "rock") {
+// 		if (gamerChoice === "paper")
+// 			alert(`${currentGame} = You Have Won! Yay`);
+// 		else
+// 			alert(`${currentGame} = Dam, the Computer was just better`);
+// 	}
+// 	//paper
+// 	else if (pcChoice === "paper") {
+// 		if (gamerChoice === "scissors")
+// 			alert(`${currentGame} = You Have Won! Yay`);
+// 		else
+// 			alert(`${currentGame} = Dam, the Computer was just better`);
+// 	}
+// 	//scissors
+// 	if (pcChoice === "scissors") {
+// 		if (gamerChoice === "rock")
+// 			alert(`${currentGame} = You Have Won! Yay`);
+// 		else
+// 			alert(`${currentGame} = Dam, the Computer was just better`);
+// 	}
+// }
+
+const pickUserHand = (hands) => {
+	console.log(hands);
+	let hand = document.querySelector(".game-borde")
+	hand.style.display = "none"
 }
 
-function showResult (){
-	let hands = document.querySelector("game-borde");
-	hands.style.display = "none";
-}
+document.getElementsById("rock").style.display = "none";
+
 
 function updateScore() {
 	if (alert === "`${currentGame} = Dam, the Computer was just better`") {
