@@ -14,53 +14,59 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- link to css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Extreme Rock, Paper, Scissors</title>
+    <title>Rock Paper Scissors</title>
     <!-- Font awesome script -->
     <script src="https://kit.fontawesome.com/88c4a217ff.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        Rock, Paper, Scissors
+        <div class="wrapper">
+            <div class="score-area">
+                <div class="title">
+                    <img src="assets/images/rock paper scissors.png" alt="rock paper scissors">
+                </div>
+                <div class="score">
+                    <p class="scores">Player Score <span id="ply-score">0</span></p>
+                    <p class="scores">Computers Score <span id="pc-score">0</span></p>
+                </div>
+            </div>
+        </div>
+
     </header>
-    <h1>
-        Choose Wisely
-    </h1>
     <div class="container">
         <div class="game-borde">
             <div class="row">
                 <div class="col">
-                    <button class="rock btn" data-choice="rock"><i class="fa-solid fa-hand-back-fist big"></i></button>
+                    <button class="rock btn" data-choice="rock"><i
+                            class="fab fa-solid fa-hand-back-fist big"></i></button>
                 </div>
             </div>
         </div>
         <div class="row">
-        <div class="col">
-            <button class="papper btn" data-choice="paper"><i class="fa-solid fa-hand big"></i></button>
+            <div class="col">
+                <button class="papper btn" data-choice="paper"><i class="fab fa-solid fa-hand big"></i></button>
+            </div>
+            <div class="col">
+                <button class="scissors btn" data-choice="scissors">
+                    <i class="fab fa-solid fa-hand-scissors big"></i></button>
+            </div>
         </div>
-        <div class="col">
-            <button class="scissors btn" data-choice="scissors">
-                <i class="fab fa-solid fa-hand-scissors big"></i></button>
-        </div>
-    </div>
-
-
-    <div class="score-area">
-        <p class="scores">Player Score <span id="ply-score">0</span></p>
-        <p class="scores">Computers Score <span id="pc-score">0</span></p>
-    </div>
 
 
 
-    <script src="assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+
+
+
+        <script src="assets/js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
     </div>
 
 </body>
