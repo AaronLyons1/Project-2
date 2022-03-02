@@ -38,9 +38,6 @@ function checkWinner(pcChoice, gamerChoice) {
 		alert(`${currentGame} is a Draw!`);
 		return;
 	}
-
-
-
 	//rock
 	else if ( pcChoice === "rock") {
 		if (gamerChoice === "paper")
@@ -62,6 +59,11 @@ function checkWinner(pcChoice, gamerChoice) {
 		else
 			alert(`${currentGame} = Dam, the Computer was just better`);
 	}
+}
+
+function showResult (){
+	let hands = document.querySelector("game-borde");
+	hands.style.display = "none";
 }
 
 function updateScore() {
