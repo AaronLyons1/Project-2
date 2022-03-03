@@ -20,23 +20,23 @@ for (let button of buttons) {
 	});
 }
 
-function playerScore() {
 
-	// Gets the current score from the DOM and increments it
 
-	let oldScore = parseInt(document.getElementById("ply-score").innerText);
-	document.getElementById("ply-score").innerText = ++oldScore;
+// function playerScore() {
 
-}
 
-function computerAnswer() {
+// 	let oldScore = parseInt(document.getElementById("ply-score").innerText);
+// 	document.getElementById("ply-score").innerText = ++oldScore;
 
-	// Gets the current tally of incorrect answers from the DOM and increments it
+// }
 
-	let oldScore = parseInt(document.getElementById("pc-score").innerText);
-	document.getElementById("pc-score").innerText = ++oldScore;
+// function computerAnswer() {
 
-}
+
+// 	let oldScore = parseInt(document.getElementById("pc-score").innerText);
+// 	document.getElementById("pc-score").innerText = ++oldScore;
+
+// }
 
 
 function runGame(gamerChoice) {
@@ -87,11 +87,11 @@ function checkWinner(pcChoice, gamerChoice) {
 			alert(`${currentGame} = Dam, the Computer was just better`);
 	}
 
-	if (alert === "You Have Won! Yay"){
-		playerScore()
-	} else if (alert === "Dam, the Computer was just better"){
-		computerAnswer()
-	}
+	// if (alert === "You Have Won! Yay"){
+	// 	playerScore()
+	// } else if (alert === "Dam, the Computer was just better"){
+	// 	computerAnswer()
+	// }
 
 }
 

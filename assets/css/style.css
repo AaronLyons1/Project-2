@@ -161,5 +161,11 @@ button:hover {
 }
 
 
+@media (max-width: 786px){
+    body{
+        width: 786px;
+    }
+}
+
 
 
