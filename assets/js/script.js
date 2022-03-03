@@ -38,6 +38,7 @@ for (let button of buttons) {
 
 // }
 
+document.getElementsByClassName("newRound").onclick = runGame
 
 function runGame(gamerChoice) {
 
