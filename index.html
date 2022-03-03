@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
         content="A basic look into a starting mechanic and learning basic health checks on your veichle.">
-    <meta name="keywords"
-        content="game, rock, paper, scissors, scissor, gamer, images, chance, look, algorithm">
+    <meta name="keywords" content="game, rock, paper, scissors, scissor, gamer, images, chance, look, algorithm">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -34,28 +37,31 @@
 
             <div class="game-borde" id="game">
                 <div class="rock hands" id="rock">
-                    <button class="rock btn" data-choice="rock"><i class="fab fa-solid fa-hand-back-fist big"  onclick="pickUserHand('rock')"></i></button>
+                    <button class="rock btn" data-choice="rock"><i class="fab fa-solid fa-hand-back-fist big"
+                            onclick="pickUserHand('rock')"></i></button>
 
                 </div>
                 <div class="paper hands">
-                    <button class="paper btn" data-choice="paper"><i class="fab fa-solid fa-hand big" onclick="pickUserHand('paper')"></i></button>
+                    <button class="paper btn" data-choice="paper"><i class="fab fa-solid fa-hand big"
+                            onclick="pickUserHand('paper')"></i></button>
 
                 </div>
                 <div class="scissors hands"></div>
-                <button class="scissors btn" data-choice="scissors"><i class="fab fa-solid fa-hand-scissors big" onclick="pickUserHand('scissors')"></i></button>
-                
+                <button class="scissors btn" data-choice="scissors"><i class="fab fa-solid fa-hand-scissors big"
+                        onclick="pickUserHand('scissors')"></i></button>
+
             </div>
             <div class="results" id="contest">
                 <div class="userhand">
                     <h1>YOUR CHOICE</h1>
                     <div class="handImageContainer">
-                        <img id="ply-image" src="/assets/images/rock.png" alt="" >
+                        <img id="ply-image" src="/assets/images/rock.png" alt="">
                     </div>
                 </div>
-                    <div class="ref">
-                        <div class="decision"></div>
-                        <div class="newRound" data-choice="run" onclick="runGame(gamerChoice)" >PLAY AGAIN</div>
-                    </div>
+                <div class="ref">
+                    <div class="decision"></div>
+                    <div class="newRound" data-choice="run" onclick="runGame(gamerChoice)">PLAY AGAIN</div>
+                </div>
                 <div class="pchand">
                     <h1>THE COMPUTERS CHOICE</h1>
                     <div id="image" class="handImageContainer">

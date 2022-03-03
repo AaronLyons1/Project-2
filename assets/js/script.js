@@ -14,7 +14,7 @@ const pcChoice = null;
  */
 
 for (let button of buttons) {
-	button.addEventListener("click", function() {
+	button.addEventListener("click", function () {
 		let gamerChoice = this.getAttribute("data-choice");
 		runGame(gamerChoice);
 	});
@@ -67,7 +67,7 @@ function checkWinner(pcChoice, gamerChoice) {
 		return;
 	}
 	//rock
-	else if ( pcChoice === "rock") {
+	else if (pcChoice === "rock") {
 		if (gamerChoice === "paper")
 			alert(`${currentGame} = You Have Won! Yay`);
 		else
@@ -111,7 +111,7 @@ const pickUserHand = (hands) => {
 	contest.style.display = "flex";
 
 	document.getElementById("ply-image").src = handOptions[hands];
-    
+
 
 };
 
