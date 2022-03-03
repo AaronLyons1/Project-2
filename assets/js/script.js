@@ -20,6 +20,24 @@ for (let button of buttons) {
 	});
 }
 
+function playerScore() {
+
+	// Gets the current score from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("ply-score").innerText);
+	document.getElementById("ply-score").innerText = ++oldScore;
+
+}
+
+function computerAnswer() {
+
+	// Gets the current tally of incorrect answers from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("pc-score").innerText);
+	document.getElementById("pc-score").innerText = ++oldScore;
+
+}
+
 
 function runGame(gamerChoice) {
 
@@ -68,6 +86,13 @@ function checkWinner(pcChoice, gamerChoice) {
 		else
 			alert(`${currentGame} = Dam, the Computer was just better`);
 	}
+
+	if (alert === "You Have Won! Yay"){
+		playerScore()
+	} else if (alert === "Dam, the Computer was just better"){
+		computerAnswer()
+	}
+
 }
 
 const handOptions = {
@@ -90,6 +115,8 @@ const pickUserHand = (hands) => {
 };
 
 function updateScore() {
+
+
 	if (alert === "`${currentGame} = Dam, the Computer was just better`") {
 		++pcScore;
 	} else {
