@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     color: #000;
-    background-color: navy;
+    background-color: rgb(144, 144, 226);
 }
 
 .wrapper{
@@ -104,7 +104,8 @@ button:hover {
 
 .results{
     width: 900px;
-    display: flex;
+    display: none;
+    margin-top: 50px;
 }
 
 .results i {

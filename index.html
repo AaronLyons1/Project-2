@@ -32,7 +32,7 @@
                 </div>
             </div>
 
-            <div class="game-borde">
+            <div class="game-borde" id="game">
                 <div class="rock hands" id="rock">
                     <button class="rock btn" data-choice="rock"><i class="fab fa-solid fa-hand-back-fist big"
                             onclick="pickUserHand('rock')"></i></button>
@@ -45,25 +45,21 @@
                 <button class="scissors btn" data-choice="scissors"><i class="fab fa-solid fa-hand-scissors big"
                         onclick="pickUserHand('scissors')"></i></button>
             </div>
-
-
-            <div class="results">
-                <div class="your-pick">
+            <div class="results" id="contest">
+                <div class="userhand">
                     <h1>YOUR CHOICE</h1>
-                    <div class="image">
-                        <i class="fab fa-solid fa-hand-scissors big"
-                        onclick="pickUserHand('scissors')"></i>
+                    <div id="image" class="handImageContainer">
+                        <img id="userPickedImage"  src="/assets/images/Rock2.png" >
                     </div>
                 </div>
                     <div class="ref">
                         <div class="decision"> <h1>YOU WIN</h1></div>
-                        <div class="newRound">PLAY AGAIN</div>
+                        <div class="newRound" data-choice="run">PLAY AGAIN</div>
                     </div>
-                <div class="pc-pick">
+                <div class="pchand">
                     <h1>THE COMPUTERS CHOICE</h1>
-                    <div class="image">
-                        <i class="fab fa-solid fa-hand-scissors big"
-                        onclick="pickUserHand('scissors')"></i>
+                    <div id="image" class="handImageContainer">
+                        <img src="/assets/images/Paper2.png" alt="">
                     </div>
                 </div>
             </div>

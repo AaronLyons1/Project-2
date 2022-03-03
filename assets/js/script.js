@@ -16,59 +16,75 @@ const pcChoice = null;
 for (let button of buttons) {
 	button.addEventListener("click", function() {
 		let gamerChoice = this.getAttribute("data-choice");
+		if(this.getAttribute("data-choice")=== "run")
 		runGame(gamerChoice);
 	});
 }
 
+
 function runGame(gamerChoice) {
+
 
 
 	let pcChoice = Math.floor(Math.random() * 3);
 
 	let result = checkWinner(options[pcChoice], gamerChoice);
 
+
+
 	updateScore(result);
 }
 
-// function checkWinner(pcChoice, gamerChoice) {
-// 	let currentGame = `${gamerChoice} against ${pcChoice}`;
 
-// 	//Check if the game is a tie
-// 	if (gamerChoice === pcChoice) {
-// 		alert(`${currentGame} is a Draw!`);
-// 		return;
-// 	}
-// 	//rock
-// 	else if ( pcChoice === "rock") {
-// 		if (gamerChoice === "paper")
-// 			alert(`${currentGame} = You Have Won! Yay`);
-// 		else
-// 			alert(`${currentGame} = Dam, the Computer was just better`);
-// 	}
-// 	//paper
-// 	else if (pcChoice === "paper") {
-// 		if (gamerChoice === "scissors")
-// 			alert(`${currentGame} = You Have Won! Yay`);
-// 		else
-// 			alert(`${currentGame} = Dam, the Computer was just better`);
-// 	}
-// 	//scissors
-// 	if (pcChoice === "scissors") {
-// 		if (gamerChoice === "rock")
-// 			alert(`${currentGame} = You Have Won! Yay`);
-// 		else
-// 			alert(`${currentGame} = Dam, the Computer was just better`);
-// 	}
-// }
+function checkWinner(pcChoice, gamerChoice) {
+	let currentGame = `${gamerChoice} against ${pcChoice}`;
+
+	//Check if the game is a tie
+	if (gamerChoice === pcChoice) {
+		alert(`${currentGame} is a Draw!`);
+		return;
+	}
+	//rock
+	else if ( pcChoice === "rock") {
+		if (gamerChoice === "paper")
+			alert(`${currentGame} = You Have Won! Yay`);
+		else
+			alert(`${currentGame} = Dam, the Computer was just better`);
+	}
+	//paper
+	else if (pcChoice === "paper") {
+		if (gamerChoice === "scissors")
+			alert(`${currentGame} = You Have Won! Yay`);
+		else
+			alert(`${currentGame} = Dam, the Computer was just better`);
+	}
+	//scissors
+	if (pcChoice === "scissors") {
+		if (gamerChoice === "rock")
+			alert(`${currentGame} = You Have Won! Yay`);
+		else
+			alert(`${currentGame} = Dam, the Computer was just better`);
+	}
+}
+
+const handOptions = {
+	"rock": "/assets/images/rock2.png",
+	"scissors": "/assets/images/scissors2.png",
+	"paper": "/assets/images/paper2.png"
+};
 
 const pickUserHand = (hands) => {
 	console.log(hands);
-	let hand = document.querySelector(".game-borde")
-	hand.style.display = "none"
-	
-}
+	let hand = document.getElementById("game");
+	hand.style.display = "none";
 
-document.getElementsById("rock").style.display = "none";
+	let contest = document.querySelector(".results")
+	contest.style.display = "flex";
+
+	document.getElementById("userPickedImage").scr = handOptions[hands]
+};
+
+// document.getElementsById("rock").style.display = "none";
 
 
 function updateScore() {
