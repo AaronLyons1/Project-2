@@ -58,4 +58,4 @@ css is my own work
 * the design for my front page came from Clever Programer on youtube
 * The fixed code was ran through w3c validators
 ### media
-* second set of rock paper scissors was taken from Clever Programer on youtube
+* second set of rock paper scissors was taken from Clever Programer on youtube 
