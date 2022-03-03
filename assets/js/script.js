@@ -16,7 +16,6 @@ const pcChoice = null;
 for (let button of buttons) {
 	button.addEventListener("click", function() {
 		let gamerChoice = this.getAttribute("data-choice");
-		if(this.getAttribute("data-choice")=== "run")
 		runGame(gamerChoice);
 	});
 }
@@ -24,9 +23,13 @@ for (let button of buttons) {
 
 function runGame(gamerChoice) {
 
-
+	// playerImage.src = `assets/images/${options[gamerChoice]}.png`;
+	// playerImage.alt =  options[gamerChoice];
 
 	let pcChoice = Math.floor(Math.random() * 3);
+
+	pcImage.src = `assets/images/${options[pcChoice]}.png`;
+	pcImage.alt = options[pcChoice];
 
 	let result = checkWinner(options[pcChoice], gamerChoice);
 
@@ -68,9 +71,9 @@ function checkWinner(pcChoice, gamerChoice) {
 }
 
 const handOptions = {
-	"rock": "/assets/images/rock2.png",
-	"scissors": "/assets/images/scissors2.png",
-	"paper": "/assets/images/paper2.png"
+	"rock": "/assets/images/rock.png",
+	"scissors": "/assets/images/snip.png",
+	"paper": "/assets/images/paper.png"
 };
 
 const pickUserHand = (hands) => {
@@ -78,14 +81,13 @@ const pickUserHand = (hands) => {
 	let hand = document.getElementById("game");
 	hand.style.display = "none";
 
-	let contest = document.querySelector(".results")
+	let contest = document.querySelector(".results");
 	contest.style.display = "flex";
 
-	document.getElementById("userPickedImage").scr = handOptions[hands]
+	document.getElementById("ply-image").src = handOptions[hands];
+    
+
 };
-
-// document.getElementsById("rock").style.display = "none";
-
 
 function updateScore() {
 	if (alert === "`${currentGame} = Dam, the Computer was just better`") {

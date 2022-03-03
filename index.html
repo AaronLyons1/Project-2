@@ -34,22 +34,22 @@
 
             <div class="game-borde" id="game">
                 <div class="rock hands" id="rock">
-                    <button class="rock btn" data-choice="rock"><i class="fab fa-solid fa-hand-back-fist big"
-                            onclick="pickUserHand('rock')"></i></button>
+                    <button class="rock btn" data-choice="rock"><i class="fab fa-solid fa-hand-back-fist big" alt="rock"onclick="pickUserHand('rock')"></i></button>
+
                 </div>
                 <div class="paper hands">
-                    <button class="paper btn" data-choice="paper"><i class="fab fa-solid fa-hand big"
-                            onclick="pickUserHand('paper')"></i></button>
+                    <button class="paper btn" data-choice="paper"><i class="fab fa-solid fa-hand big" alt="paper" onclick="pickUserHand('paper')"></i></button>
+
                 </div>
                 <div class="scissors hands"></div>
-                <button class="scissors btn" data-choice="scissors"><i class="fab fa-solid fa-hand-scissors big"
-                        onclick="pickUserHand('scissors')"></i></button>
+                <button class="scissors btn" data-choice="scissors"><i class="fab fa-solid fa-hand-scissors big" alt="scissors" onclick="pickUserHand('scissors')"></i></button>
+                
             </div>
             <div class="results" id="contest">
                 <div class="userhand">
                     <h1>YOUR CHOICE</h1>
                     <div id="image" class="handImageContainer">
-                        <img id="userPickedImage"  src="/assets/images/Rock2.png" >
+                        <img id="ply-image" src="/assets/images/rock.png" >
                     </div>
                 </div>
                     <div class="ref">
@@ -59,7 +59,7 @@
                 <div class="pchand">
                     <h1>THE COMPUTERS CHOICE</h1>
                     <div id="image" class="handImageContainer">
-                        <img src="/assets/images/Paper2.png" alt="">
+                        <img id="pc-image" src="/assets/images/snip.png" alt="">
                     </div>
                 </div>
             </div>
