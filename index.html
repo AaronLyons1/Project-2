@@ -25,16 +25,18 @@
 <body>
     <div class="container">
         <div class="wrapper">
-            <div class="score-area">
-                <div class="title">
-                    <img src="assets/images/rock-paper-scissors.png" alt="rock paper scissors">
+            <header></header>
+                <div class="score-area">
+                    <div class="title">
+                        <img src="assets/images/rock-paper-scissors.png" alt="rock paper scissors">
+                    </div>
+                    <div class="score">
+                        <p class="scores">Player Score <span id="ply-score">0</span></p>
+                        <p class="scores">Computers Score <span id="pc-score">0</span></p>
+                    </div>
                 </div>
-                <div class="score">
-                    <p class="scores">Player Score <span id="ply-score">0</span></p>
-                    <p class="scores">Computers Score <span id="pc-score">0</span></p>
-                </div>
-            </div>
-
+            </header>
+            <!--Game area the user interacts with-->
             <div class="game-borde" id="game">
                 <div class="rock hands" id="rock">
                     <button class="rock btn" data-choice="rock"><i class="fab fa-solid fa-hand-back-fist big"
@@ -71,7 +73,7 @@
             </div>
         </div>
 
-
+        
 
         <script src="assets/js/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"

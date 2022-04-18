@@ -20,24 +20,6 @@ for (let button of buttons) {
 	});
 }
 
-
-
-// function playerScore() {
-
-
-// 	let oldScore = parseInt(document.getElementById("ply-score").innerText);
-// 	document.getElementById("ply-score").innerText = ++oldScore;
-
-// }
-
-// function computerAnswer() {
-
-
-// 	let oldScore = parseInt(document.getElementById("pc-score").innerText);
-// 	document.getElementById("pc-score").innerText = ++oldScore;
-
-// }
-
 document.getElementsByClassName("newRound").onclick = runGame
 
 function runGame(gamerChoice) {
@@ -87,12 +69,6 @@ function checkWinner(pcChoice, gamerChoice) {
 		else
 			alert(`${currentGame} = Dam, the Computer was just better`);
 	}
-
-	// if (alert === "You Have Won! Yay"){
-	// 	playerScore()
-	// } else if (alert === "Dam, the Computer was just better"){
-	// 	computerAnswer()
-	// }
 
 }
 
