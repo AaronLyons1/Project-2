@@ -310,6 +310,39 @@ button:hover {
         font-size: large;
     }
 }
+@media screen and (max-width: 630px){
+    .score-area{
+        width: 380px;
+        }
+        .title{
+            margin-left: 2px;
+        }
+
+    .footer-text {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    #text{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 520px){
+
+}
+
+
+@media screen and (max-width: 560px){
+    .footer-text{
+        font-size: medium;
+    }
+
+    .social {
+        margin-right: 20%;
+    }
+}
 
 
 
