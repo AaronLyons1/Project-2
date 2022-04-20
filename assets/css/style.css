@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -53,7 +59,7 @@ body {
     color: rgb(153, 52, 52);
 }
 
-.title{
+#text{
     text-align: center;
     font-size: 250%;
     height: 10vh;
@@ -62,7 +68,7 @@ body {
     text-transform: capitalize;
 }
 
-.titel {
+#text {
     margin-left: 30px;
 }
 
@@ -168,6 +174,14 @@ button:hover {
     background-color: beige;
     transform: translate3d(0px, -2px, 0px);
     transition: all 0.10s;
+}
+
+.footer-text {
+    float: left;
+    font-size: 200%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    color: #fff;
 }
 
 

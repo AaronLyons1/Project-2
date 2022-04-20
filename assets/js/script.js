@@ -1,6 +1,7 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
+let text = document.getElementById("text");
 let buttons = document.getElementsByClassName("btn");
 let pcScore = document.getElementsByClassName("pc-score");
 let playerImage = document.getElementById("ply-image");
@@ -19,6 +20,23 @@ for (let button of buttons) {
 		runGame(gamerChoice);
 	});
 }
+
+const handOptions = {
+	"rock": "assets/images/rock.png",
+	"scissors": "assets/images/snip.png",
+	"paper": "assets/images/paper.png"
+};
+
+const pickUserHand = (hands) => {
+	console.log(hands);
+	let hand = document.getElementById("game");
+	hand.style.display = "none";
+
+	let contest = document.querySelector(".results");
+	contest.style.display = "flex";
+
+	document.getElementById("ply-image").src = handOptions[hands];
+};
 
 document.getElementsByClassName("newRound").onclick = runGame
 
@@ -45,58 +63,39 @@ function checkWinner(pcChoice, gamerChoice) {
 
 	//Check if the game is a tie
 	if (gamerChoice === pcChoice) {
-		alert(`${currentGame} is a Draw!`);
+		text.innerHTML = `${currentGame} It's a Draw!`
 		return;
 	}
 	//rock
 	else if (pcChoice === "rock") {
 		if (gamerChoice === "paper")
-			alert(`${currentGame} = You Have Won! Yay`);
+			text.innerHTML = `${currentGame} You Have Won! Yay`
 		else
-			alert(`${currentGame} = Dam, the Computer was just better`);
+			text.innerHTML = `${currentGame} Dam, the Computer was just better`
 	}
 	//paper
 	else if (pcChoice === "paper") {
 		if (gamerChoice === "scissors")
-			alert(`${currentGame} = You Have Won! Yay`);
+		text.innerHTML = `${currentGame} You Have Won! Yay`
 		else
-			alert(`${currentGame} = Dam, the Computer was just better`);
+			text.innerHTML = `${currentGame} Dam, the Computer was just better`
 	}
 	//scissors
 	if (pcChoice === "scissors") {
 		if (gamerChoice === "rock")
-			alert(`${currentGame} = You Have Won! Yay`);
+		text.innerHTML = `${currentGame} You Have Won! Yay`
 		else
-			alert(`${currentGame} = Dam, the Computer was just better`);
+		text.innerHTML = `${currentGame} Dam, the Computer was just better`
 	}
 
 }
-
-const handOptions = {
-	"rock": "/assets/images/rock.png",
-	"scissors": "/assets/images/snip.png",
-	"paper": "/assets/images/paper.png"
-};
-
-const pickUserHand = (hands) => {
-	console.log(hands);
-	let hand = document.getElementById("game");
-	hand.style.display = "none";
-
-	let contest = document.querySelector(".results");
-	contest.style.display = "flex";
-
-	document.getElementById("ply-image").src = handOptions[hands];
-
-
-};
 
 function updateScore() {
 
 
 	if (alert === "`${currentGame} = Dam, the Computer was just better`") {
-		++pcScore;
+		pcScore++;
 	} else {
-		++playerScore;
+		playerScore++;
 	}
 }
