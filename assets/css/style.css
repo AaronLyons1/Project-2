@@ -343,6 +343,39 @@ button:hover {
         margin-right: 20%;
     }
 }
+@media screen and (max-width: 430px){
+    .rock-paper-scissors{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .score{
+        width: 50px;
+        height: 30px;
+        background-color: rgb(144, 144, 226);
+        top: 100px;
+        transform:translate(0,100px) ;
+        display: inline;
+        margin-right: 10vh;
+    }
+    .scores{
+        font-size: small;
+        font-weight: bold;
+    }
+    #text{
+        margin-top: 20vh;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    header{
+        padding: 0;
+        margin: 0;
+    }
+    .score-area{
+        border: 0px solid #fff;
+        width: 0px;
+}
+}
 
 
 
