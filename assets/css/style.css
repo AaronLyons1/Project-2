@@ -178,25 +178,20 @@ button:hover {
 
 /** footer code **/
 .footer {
-    width: 50%;
+    width: 100%;
 }
 
-ul{
-    display: inline;
-}
 .footer-text {
     text-align: center;
     font-size: 200%;
-    margin-left: 20%;
     margin-bottom: 2%;
     color: #fff;
 }
 
 .social {
     font-size: 300%;
-    margin-right: 20%;
+    margin-right: 30%;
     margin-top: 3%;
-    margin-left: 10%;
 }
 
 .social li {
@@ -208,13 +203,6 @@ ul{
 
 .social i {
     color: #fff;
-}
-
-
-@media screen and (max-width: 786px) {
-    body {
-        width: 786px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -234,5 +222,27 @@ ul{
     
     .social {
         margin-right: 30%;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    body {
+        width: 786px;
+    }
+    
+    .wrapper{
+        max-width: 780px;
+    }
+
+    #ply-image{
+        padding-left: 5rem;
+    }
+
+    .pc-title{
+        padding-right: 6rem;
+    }
+
+    .score-area{
+        padding-right: 1rem;
     }
 }
