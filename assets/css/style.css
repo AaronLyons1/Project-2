@@ -176,11 +176,33 @@ button:hover {
     transition: all 0.10s;
 }
 
+/** footer code **/
+.footer {
+    width: 100%;
+}
+
 .footer-text {
     float: left;
     font-size: 200%;
     margin-left: 20%;
     margin-bottom: 2%;
+    color: #fff;
+}
+
+.social {
+    font-size: 300%;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+.social li {
+    display: block;
+    list-style-type: none;
+    padding-right: 3rem;
+    float: right;
+}
+
+.social i {
     color: #fff;
 }
 
