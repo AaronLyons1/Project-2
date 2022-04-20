@@ -252,5 +252,31 @@ button:hover {
         margin-right: 17%;
     }
 }
+@media screen and (max-width: 760px){
+    .score-area{
+    width: 550px;
+    }
+    .score{
+        padding-right: 15px;
+    }
+    .title{
+        margin-left: 5px;
+    }
+    .scores{
+        font-size: 13px;
+    }
+    .userhand{
+        padding-left: 5rem;
+    }
+    .pchand{
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .decision {
+    width: 150px;
+    }
+}
 
 
