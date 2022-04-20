@@ -1,6 +1,9 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
+
+let userScore = 0;
+let computerScore = 0;
 let text = document.getElementById("text");
 let buttons = document.getElementsByClassName("btn");
 let pcScore = document.getElementsByClassName("pc-score");
@@ -23,7 +26,7 @@ for (let button of buttons) {
 
 const handOptions = {
 	"rock": "assets/images/rock.png",
-	"scissors": "assets/images/snip.png",
+	"scissors": "assets/images/scissors.png",
 	"paper": "assets/images/paper.png"
 };
 
@@ -38,12 +41,7 @@ const pickUserHand = (hands) => {
 	document.getElementById("ply-image").src = handOptions[hands];
 };
 
-document.getElementsByClassName("newRound").onclick = runGame
-
 function runGame(gamerChoice) {
-
-	// playerImage.src = `assets/images/${options[gamerChoice]}.png`;
-	// playerImage.alt =  options[gamerChoice];
 
 	let pcChoice = Math.floor(Math.random() * 3);
 
@@ -76,7 +74,7 @@ function checkWinner(pcChoice, gamerChoice) {
 	//paper
 	else if (pcChoice === "paper") {
 		if (gamerChoice === "scissors")
-		text.innerHTML = `${currentGame} You Have Won! Yay`
+			text.innerHTML = `${currentGame} You Have Won! Yay`
 		else
 			text.innerHTML = `${currentGame} Dam, the Computer was just better`
 	}
@@ -98,4 +96,12 @@ function updateScore() {
 	} else {
 		playerScore++;
 	}
+}
+
+const restartGame = () => {
+	let hand = document.getElementById("game");
+	hand.style.display = "flex";
+
+	let contest = document.querySelector(".results");
+	contest.style.display = "none";
 }

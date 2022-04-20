@@ -178,11 +178,14 @@ button:hover {
 
 /** footer code **/
 .footer {
-    width: 100%;
+    width: 50%;
 }
 
+ul{
+    display: inline;
+}
 .footer-text {
-    float: left;
+    text-align: center;
     font-size: 200%;
     margin-left: 20%;
     margin-bottom: 2%;
@@ -193,6 +196,7 @@ button:hover {
     font-size: 300%;
     margin-right: 20%;
     margin-top: 3%;
+    margin-left: 10%;
 }
 
 .social li {
@@ -207,8 +211,28 @@ button:hover {
 }
 
 
-@media (max-width: 786px) {
+@media screen and (max-width: 786px) {
     body {
         width: 786px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-text {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .social {
+        margin-right: 32%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .social {
+        margin-right: 30%;
     }
 }
