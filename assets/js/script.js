@@ -6,10 +6,10 @@ let userScore = 0;
 let computerScore = 0;
 let text = document.getElementById("text");
 let buttons = document.getElementsByClassName("btn");
-let pcScore = document.getElementsByClassName("pc-score");
 let playerImage = document.getElementById("ply-image");
 let pcImage = document.getElementById("pc-image");
-let playerScore = document.getElementsByClassName("ply-score");
+let pcScore = document.getElementById("pc-score");
+let playerScore = document.getElementById("ply-score");
 let options = ["rock", "paper", "scissors"];
 const pcChoice = null;
 
@@ -51,8 +51,6 @@ function runGame(gamerChoice) {
 	let result = checkWinner(options[pcChoice], gamerChoice);
 
 
-
-	updateScore(result);
 }
 
 
@@ -66,37 +64,57 @@ function checkWinner(pcChoice, gamerChoice) {
 	}
 	//rock
 	else if (pcChoice === "rock") {
-		if (gamerChoice === "paper")
+		if (gamerChoice === "paper"){
 			text.innerHTML = `${currentGame} You Have Won! Yay`
-		else
+			userScore++;
+			playerScore.innerHTML = userScore;
+		}
+		else{
 			text.innerHTML = `${currentGame} Dam, the Computer was just better`
+			computerScore++;
+			pcScore.innerHTML = computerScore;
+		}
 	}
 	//paper
 	else if (pcChoice === "paper") {
-		if (gamerChoice === "scissors")
+		if (gamerChoice === "scissors"){
 			text.innerHTML = `${currentGame} You Have Won! Yay`
-		else
+			userScore++;
+			playerScore.innerHTML = userScore;
+		}
+		else{
 			text.innerHTML = `${currentGame} Dam, the Computer was just better`
+			computerScore++;
+			pcScore.innerHTML = computerScore;
+		}
 	}
 	//scissors
 	if (pcChoice === "scissors") {
-		if (gamerChoice === "rock")
-		text.innerHTML = `${currentGame} You Have Won! Yay`
-		else
-		text.innerHTML = `${currentGame} Dam, the Computer was just better`
+		if (gamerChoice === "rock"){
+			text.innerHTML = `${currentGame} You Have Won! Yay`
+			userScore++;
+			playerScore.innerHTML = userScore;
+		}
+		else{
+			text.innerHTML = `${currentGame} Dam, the Computer was just better`
+			computerScore++;
+			pcScore.innerHTML = computerScore;
+			}
 	}
 
 }
 
-function updateScore() {
 
 
-	if (alert === "`${currentGame} = Dam, the Computer was just better`") {
-		pcScore++;
-	} else {
-		playerScore++;
-	}
-}
+// function updateScore() {
+
+
+// 	if (alert === "`${currentGame} = Dam, the Computer was just better`") {
+// 		pcScore++;
+// 	} else {
+// 		playerScore++;
+// 	}
+// }
 
 const restartGame = () => {
 	let hand = document.getElementById("game");

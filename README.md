@@ -44,7 +44,7 @@ css is my own work
 * I did also have a problem with my submit button but aswel resolved that
 
 #### unresolved problems
-* My score board will not run, when the code is there it doesnt allow the rest of my code to run so i have it there just commented out ,
+* The score board is the only problem that seems to be appearing, if I win my first round then it counts to the score but after that it won't count, but the pc score works perfectly.
 
 # Deployment 
 * This site was deployed using githubs built in feature to allow the likes of me to upload pages for courses as such
