@@ -278,5 +278,38 @@ button:hover {
     width: 150px;
     }
 }
+@media screen and (max-width: 680px){
+    .score-area{
+        width: 450px;
+        }
+        .score{
+            padding-right: 5px;
+        }
+        .title{
+            margin-left: 2px;
+        }
+    #pc-image{
+        max-height: 150px;
+        max-width: 150px;
+    }
+    #ply-image{
+        max-height: 150px;
+        max-width: 150px; 
+        padding-left: 0;
+    }
+    #text{
+        font-size: medium;
+    }
+    .pc-title{
+        margin-bottom: 15px;
+    }
+    .your-choice{
+        font-size: large;
+    }
+    .pc-title{
+        font-size: large;
+    }
+}
+
 
 
