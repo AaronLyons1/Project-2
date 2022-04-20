@@ -133,7 +133,7 @@ button:hover {
     flex: 1;
 }
 
-.results h1 {
+.results h2 {
     color: #fff;
     font-size: 20px;
     margin-top: 22px;
@@ -158,7 +158,7 @@ button:hover {
     justify-content: center;
 }
 
-.ref h1 {
+.ref h2 {
     font-size: 40px;
 }
 
@@ -223,6 +223,10 @@ button:hover {
     .social {
         margin-right: 30%;
     }
+
+    .newRound{
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 786px) {
@@ -245,4 +249,140 @@ button:hover {
     .score-area{
         padding-right: 1rem;
     }
+
+    .social{
+        margin-right: 17%;
+    }
 }
+
+@media screen and (max-width: 760px){
+    .score-area{
+    width: 550px;
+    }
+    .score{
+        padding-right: 15px;
+    }
+    .title{
+        margin-left: 5px;
+    }
+    .scores{
+        font-size: 13px;
+    }
+    .userhand{
+        padding-left: 5rem;
+    }
+    .pchand{
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .decision {
+    width: 150px;
+    }
+}
+
+
+@media screen and (max-width: 680px){
+    .score-area{
+        width: 450px;
+        }
+        .score{
+            padding-right: 5px;
+        }
+        .title{
+            margin-left: 2px;
+        }
+    #pc-image{
+        max-height: 150px;
+        max-width: 150px;
+    }
+    #ply-image{
+        max-height: 150px;
+        max-width: 150px; 
+        padding-left: 0;
+    }
+    #text{
+        font-size: medium;
+    }
+    .pc-title{
+        margin-bottom: 15px;
+    }
+    .your-choice{
+        font-size: large;
+    }
+    .pc-title{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .score-area{
+        width: 380px;
+        }
+        .title{
+            margin-left: 2px;
+        }
+
+    .footer-text {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    #text{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 520px){
+
+}
+
+
+@media screen and (max-width: 560px){
+    .footer-text{
+        font-size: medium;
+    }
+
+    .social {
+        margin-right: 20%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .rock-paper-scissors{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .score{
+        width: 50px;
+        height: 30px;
+        background-color: rgb(144, 144, 226);
+        top: 100px;
+        transform:translate(0,100px) ;
+        display: inline;
+        margin-right: 10vh;
+    }
+    .scores{
+        font-size: small;
+        font-weight: bold;
+    }
+    #text{
+        margin-top: 20vh;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    header{
+        padding: 0;
+        margin: 0;
+    }
+    .score-area{
+        border: 0px solid #fff;
+        width: 0px;
+}
+}
+
+
+
