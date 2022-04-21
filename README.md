@@ -54,9 +54,15 @@ CSS is my own work
 * I did also have a problem with my submit button but aswel resolved that
 
 #### unresolved problems
-* There is no unresolved issue, but there is an error with GitHub itself, my media queries work perfectly on my GitHub page and then on my phone it doesn't work. Then I tried it on my friend's phone, and it worked properly. I'm not sure if it's a bug on my end or GitHubs end, but for me right now my site is fully responsive and reactive. I am also getting a warning when I run my code through Jshint, this is it (This isn't a game breaking or code ruining error)
+* There is no unresolved issue, but there is an error with GitHub itself, my media queries work perfectly on my GitHub page and then on my phone it doesn't work. Then I tried it on my friend's phone, and it worked properly. I'm not sure if it's a bug on my end or GitHubs end, but for me right now my site is fully responsive and reactive. I am also getting a warning when I run my code through Jshint, this is it (This isn't a game breaking or code ruining error).
 
 ![](assets/images/js-warning.png)
+
+ This is what it looks like for me.
+
+ ![](assets/images/430px-js-1.png)
+
+ ![](assets/images/430px-js-2.png)
 
 # Deployment 
 * This site was deployed using GitHub's built-in feature to allow the likes of me to upload pages for courses as such
