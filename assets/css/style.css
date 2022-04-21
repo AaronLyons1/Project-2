@@ -340,6 +340,95 @@ button:hover {
     }
 }
 
+@media screen and (max-width: 500px){
+
+    .wrapper{
+        margin: 0;
+        padding: 0;
+    }
+
+    .rock-paper-scissors{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .score{
+        width: 50px;
+        height: 30px;
+        background-color: rgb(144, 144, 226);
+        top: 100px;
+        transform:translate(0,100px) ;
+        display: inline;
+        margin-right: 50vh;
+        margin-left: 0;
+    }
+
+    .scores{
+        font-size: small;
+        font-weight: bold;
+        top: 5vh;
+        margin-right: 20vh;
+    }
+
+    #text{
+        margin-top: 15vh;
+        font-size: small;
+        font-weight: bold;
+        margin-right: 37vh;
+    }
+
+    header{
+        padding: 0;
+        margin: 0;
+    }
+
+    .score-area{
+        border: 0px solid #fff;
+        width: 0px;
+        margin-right: 50vh;
+    }
+
+    .game-borde{
+        margin-right: 36vh;
+    }
+
+    .footer-text{
+        text-align: left;
+        margin-left: 12vh;
+        margin-right: 0;
+
+    }
+    .social{
+        top: 3vh;
+        margin-right: 35vh;
+    }
+
+    .userhand{
+        padding-left: 7vh;
+        padding-right: 0;
+        padding-top: 23px;
+    }
+
+    .pchand{
+        margin-right: 100vw;
+        margin-left: 0;
+        padding: 0;
+    }
+    .ref{
+        padding-right: 0;
+        max-width: 100px;
+    }
+
+    .result{
+        max-width: 450px;
+    }
+
+    .pc-title{
+        max-height: 50px;
+    }
+}
+
+
 @media screen and (max-width: 460px){
 
     .wrapper{
