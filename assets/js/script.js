@@ -59,18 +59,18 @@ function checkWinner(pcChoice, gamerChoice) {
 
 	//Check if the game is a tie
 	if (gamerChoice === pcChoice) {
-		text.innerHTML = `${currentGame}. It's a Draw!`
+		text.innerHTML = `${currentGame}. It's a Draw!`;
 		return;
 	}
 	//rock
 	else if (pcChoice === "rock") {
 		if (gamerChoice === "paper"){
-			text.innerHTML = `${currentGame}. You Have Won! Yay`
+			text.innerHTML = `${currentGame}. You Have Won! Yay`;
 			userScore++;
 			playerScore.innerHTML = userScore;
 		}
 		else{
-			text.innerHTML = `${currentGame}. Damn, the Computer was just better`
+			text.innerHTML = `${currentGame}. Damn, the Computer was just better`;
 			computerScore++;
 			pcScore.innerHTML = computerScore;
 		}
@@ -78,12 +78,12 @@ function checkWinner(pcChoice, gamerChoice) {
 	//paper
 	else if (pcChoice === "paper") {
 		if (gamerChoice === "scissors"){
-			text.innerHTML = `${currentGame}. You Have Won! Yay`
+			text.innerHTML = `${currentGame}. You Have Won! Yay`;
 			userScore++;
 			playerScore.innerHTML = userScore;
 		}
 		else{
-			text.innerHTML = `${currentGame}. Damn, the Computer was just better`
+			text.innerHTML = `${currentGame}. Damn, the Computer was just better`;
 			computerScore++;
 			pcScore.innerHTML = computerScore;
 		}
@@ -91,12 +91,12 @@ function checkWinner(pcChoice, gamerChoice) {
 	//scissors
 	if (pcChoice === "scissors") {
 		if (gamerChoice === "rock"){
-			text.innerHTML = `${currentGame}. You Have Won! Yay`
+			text.innerHTML = `${currentGame}. You Have Won! Yay`;
 			userScore++;
 			playerScore.innerHTML = userScore;
 		}
 		else{
-			text.innerHTML = `${currentGame}. Damn, the Computer was just better`
+			text.innerHTML = `${currentGame}. Damn, the Computer was just better`;
 			computerScore++;
 			pcScore.innerHTML = computerScore;
 			}
@@ -110,4 +110,4 @@ const restartGame = () => {
 
 	let contest = document.querySelector(".results");
 	contest.style.display = "none";
-}
+};
