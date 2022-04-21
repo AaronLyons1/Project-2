@@ -9,12 +9,14 @@ My planning on this project was slightly all over the place, but I eventually ac
 looking to achieve, I did get help from a YouTube video, but every other bit of code like JS and the majority of 
 CSS is my own work
 
-![](assets/images/responsive2.png)
+![](assets/images/p2-responsive.png)
 
 # Features
 ## Existing features
 * This page has a calm and neutral colour for the background, keeping everything simple and smooth.
 * The user is immediately greeted with the task to undertake which is Choose Rock, Paper or Scissors
+* This updated version now has a fully reactive site, with increasing score boards and function run again buttons.
+* It also has interactibe links at the bottom of the page the alloes yo uto open new tabs and search.
 
 ![](assets/images/rps.png)
 
@@ -34,6 +36,14 @@ CSS is my own work
 * I tested my site across different platforms, and it preformed perfectly across all
 * I ran my HTML and CSS code through w3c validator and there were no errors or warnings in my code
 * When I ran my JS code through a validator I received twenty Eight warnings but no errors, these errors from my understanding are from using an outdated version of code
+
+![](assets/images/p2-html-validate.png)
+
+![](assets/images/p2-css-validate.png)
+
+![](assets/images/p2-js-validate.png)
+
+
 * when I ran my website through lighthouse, I got back glowing reviews as follows
 
 ![](assets/images/lighthouse.png)
@@ -44,7 +54,9 @@ CSS is my own work
 * I did also have a problem with my submit button but aswel resolved that
 
 #### unresolved problems
-* The only unresolved error I have is on a 
+* The is no unresolved issue but there is a =n error with Github itself, my media queries work perfectly on my github page and then on my phone it doesnt work. Then I tried it on my friends phone and it worked properly. I'm noy sure if its a bug on my end or githubs end but for me right now my site is fully responsive and reactive. I am also getting a warning when i run my code through Jshint, this is it (THis isn't a game breaking or code ruining error)
+
+![](assets/images/js-warning.png)
 
 # Deployment 
 * This site was deployed using GitHubs built-in feature to allow the likes of me to upload pages for courses as such
