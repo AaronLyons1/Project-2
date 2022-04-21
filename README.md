@@ -16,7 +16,7 @@ CSS is my own work
 * This page has a calm and neutral colour for the background, keeping everything simple and smooth.
 * The user is immediately greeted with the task to undertake which is Choose Rock, Paper or Scissors
 * This updated version now has a fully reactive site, with increasing score boards and function run again buttons.
-* It also has interactibe links at the bottom of the page the alloes yo uto open new tabs and search.
+* It also has interactive links at the bottom of the page, that allows you to open new tabs and search.
 
 ![](assets/images/rps.png)
 
@@ -54,12 +54,12 @@ CSS is my own work
 * I did also have a problem with my submit button but aswel resolved that
 
 #### unresolved problems
-* The is no unresolved issue but there is a =n error with Github itself, my media queries work perfectly on my github page and then on my phone it doesnt work. Then I tried it on my friends phone and it worked properly. I'm noy sure if its a bug on my end or githubs end but for me right now my site is fully responsive and reactive. I am also getting a warning when i run my code through Jshint, this is it (THis isn't a game breaking or code ruining error)
+* There is no unresolved issue, but there is a =n error with GitHub itself, my media queries work perfectly on my GitHub page and then on my phone it doesn't work. Then I tried it on my friend's phone, and it worked properly. I'm not sure if it's a bug on my end or GitHubs end, but for me right now my site is fully responsive and reactive. I am also getting a warning when I run my code through Jshint, this is it (This isn't a game breaking or code ruining error)
 
 ![](assets/images/js-warning.png)
 
 # Deployment 
-* This site was deployed using GitHubs built-in feature to allow the likes of me to upload pages for courses as such
+* This site was deployed using GitHub's built-in feature to allow the likes of me to upload pages for courses as such
 * My site was uploaded at 3am, Thursday the 3rd of March 2022
 
 ## Credits
